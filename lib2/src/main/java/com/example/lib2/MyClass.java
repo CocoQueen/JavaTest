@@ -32,6 +32,13 @@ public class MyClass {
      * 多态：
      */
 
+    /**
+     * long(8)与float(4)的取值范围谁大谁小？
+     * float的计算值方式与long类型不一样
+     * float=（-1）^s*M*2^E,E可以取到127
+     * long的最大值2^63-1,float的指数比long大，所以float的取值范围大
+     */
+
     public static void main(String[] args) {
         //Hello World
         System.out.println("Hello World");
