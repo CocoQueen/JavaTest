@@ -1,5 +1,7 @@
 package com.example.lib2;
 
+import java.util.Scanner;
+
 public class MyClass {
 
     /** java语言的主要特性：
