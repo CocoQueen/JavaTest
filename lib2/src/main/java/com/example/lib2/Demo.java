@@ -32,15 +32,40 @@ public class Demo {
         double d1 = 0.49;
         double d2 = 0.35;
         double d4 = 0.40;
-        double dd=d + d1 + d2 + d4;
+        double dd = d + d1 + d2 + d4;
         String format = new DecimalFormat("0.00").format(dd);
         System.out.println(format);
 
         //键盘录入
-        Scanner scanner = new Scanner(System.in);
-        int i = scanner.nextInt();
-        System.out.println("请输入一个数:");
-        System.out.println("i=" + i);
+//        Scanner scanner = new Scanner(System.in);
+//        int i = scanner.nextInt();
+//        System.out.println("请输入一个数:");
+//        System.out.println("i=" + i);
 
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 5; i <= j; j--) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 1; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+
+        for (float y = (float) 1.5; y > -1.5; y -= 0.1) {
+            for (float x = (float) -1.5; x < 1.5; x += 0.05) {
+                float a = x * x + y * y - 1;
+                if ((a * a * a - x * x * y * y * y) <= 0.0) {
+                    System.out.print("^");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
     }
 }
